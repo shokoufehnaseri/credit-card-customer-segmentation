@@ -3,20 +3,20 @@
 **Author:** Shokoufeh Naseri  
 **Year:** 2024  
 
-## 📌 Project Overview
+## Project Overview
 This project applies **unsupervised learning** to segment credit card customers based on usage behavior.
 Using **Principal Component Analysis (PCA)** and **K-Means clustering**, it identifies meaningful customer groups that support **marketing, risk analysis, and business strategy**.
 
 ---
 
-## 📊 Dataset
+## Dataset
 - Source: Kaggle – CC GENERAL Dataset  
 - ~9,000 active credit card holders  
 - 18 behavioral features (purchases, balance, cash advances, payments)
 
 ---
 
-## 🧹 Data Preparation
+##  Data Preparation
 - Median imputation for missing values  
 - Removed non-numeric identifier (`CUST_ID`)  
 - Standardized numeric features  
@@ -24,14 +24,14 @@ Using **Principal Component Analysis (PCA)** and **K-Means clustering**, it iden
 
 ---
 
-## 📉 Dimensionality Reduction (PCA)
+## Dimensionality Reduction (PCA)
 - Reduced features from **17 → 10**
 - First **6 principal components explain 83% of variance**
 - Improved representation after removing correlated features
 
 ---
 
-## 🧠 Clustering (K-Means)
+## Clustering (K-Means)
 - Optimal clusters selected using **Elbow Method**
 - **K = 3** customer segments identified:
 
@@ -46,14 +46,14 @@ Minimal activity across all features
 
 ---
 
-## ✅ Key Takeaways
+## Key Takeaways
 - Removing correlated variables improves PCA performance  
 - PCA + K-Means produces clear, interpretable segments  
 - Results support customer profiling and targeted strategies  
 
 ---
 
-## 🛠 Tools & Technologies
+## Tools & Technologies
 - **R**
 - PCA
 - K-Means Clustering
@@ -62,15 +62,17 @@ Minimal activity across all features
 
 ---
 
-## ▶️ How to Run This Project
+## How to Run This Project
 
 1. **Clone the repository**
    ```bash
    git clone https://github.com/shokoufehnaseri/credit-card-customer-segmentation.git
-Install required R packages
 
-r
-Copy code
+2. **Install required R packages**
+
+## Install Required R Packages
+
+```r
 install.packages(c(
   "factoextra",
   "corrplot",
@@ -78,18 +80,19 @@ install.packages(c(
   "dplyr",
   "gridExtra"
 ))
-Download the dataset
+```
+3. **Download the dataset**
 
-Download CC GENERAL.csv from Kaggle
+ - Download CC GENERAL.csv from Kaggle
 
-Place it in the project directory
+ - Place it in the project directory
 
-Run the analysis
+4. **Run the analysis**
 
-Execute the R script or R Markdown file
+ - Execute the R script or R Markdown file
 
-Visualizations and cluster results will be generated automatically
+ - Visualizations and cluster results will be generated automatically
 
-📌 Project Type
+## Project Type
 Unsupervised Learning | Customer Segmentation | Data Analytics
 
