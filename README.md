@@ -89,9 +89,10 @@ install.packages(c(
 
 4. **Run the analysis**
 
- - Execute the R script or R Markdown file
+ - Open the .Rmd file in RStudio
 
- - Visualizations and cluster results will be generated automatically
+ - Click Knit to generate the HTML report
+
 
 ## Project Type
 Unsupervised Learning | Customer Segmentation | Data Analytics
